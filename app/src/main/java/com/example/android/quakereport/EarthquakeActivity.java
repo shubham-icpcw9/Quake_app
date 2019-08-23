@@ -32,12 +32,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.List;
 import android.app.LoaderManager;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.Loader;
 import android.widget.TextView;
+import java.util.Date;
 
 public class EarthquakeActivity extends AppCompatActivity implements LoaderCallbacks<List<Location>> {
 
@@ -114,13 +116,20 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
                 getString(R.string.settings_order_by_default));
+        String limit = sharedPrefs.getString(getString(R.string.settings_limit_key),
+                getString(R.string.settings_limit_default));
+
+        String maxMagnitude = sharedPrefs.getString(
+                getString(R.string.settings_max_magnitude_key),
+                getString(R.string.settings_max_magnitude_default));
 
         Uri baseUri = Uri.parse(USGS_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
+        uriBuilder.appendQueryParameter("maxmagnitude", maxMagnitude);
         uriBuilder.appendQueryParameter("format", "geojson");
-        uriBuilder.appendQueryParameter("limit", "10");
-        uriBuilder.appendQueryParameter("minmag", minMagnitude);
+        uriBuilder.appendQueryParameter("limit", limit);
+        uriBuilder.appendQueryParameter("minmagnitude", minMagnitude);
         uriBuilder.appendQueryParameter("orderby", orderBy);
 
         return new EarthquakeLoader(this, uriBuilder.toString());

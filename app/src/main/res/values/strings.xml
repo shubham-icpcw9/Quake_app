@@ -22,7 +22,7 @@
     <string name="settings_title">Earthquake Settings</string>
     <string name="settings_min_magnitude_label">Minimum Magnitude</string>
     <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
-    <string name="settings_min_magnitude_default" translatable="false">6</string>
+    <string name="settings_min_magnitude_default" translatable="false">3</string>
 
     <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
     <string name="settings_order_by_label">Order By</string>
@@ -36,4 +36,11 @@
     <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
     <string name="settings_order_by_most_recent_label">Most Recent</string>
     <string name="settings_order_by_most_recent_value" translatable="false">time</string>
+    <string name="settings_limit_default" translatable="false">10</string>
+    <string name="settings_limit_key" translatable="false">limit</string>
+    <string name="settings_limit_label">Number of Events(&lt; 20000)</string>
+    <string name="settings_max_magnitude_key" translatable="false">max_magnitude</string>
+    <string name="settings_max_magnitude_label">Maximum Magnitude</string>
+    <string name="settings_max_magnitude_default" translatable="false">8</string>
+
 </resources>

@@ -28,8 +28,14 @@ public class SettingsActivity  extends AppCompatActivity {
             Preference minMagnitude = findPreference(getString(R.string.settings_min_magnitude_key));
             bindPreferenceSummaryToValue(minMagnitude);
 
+            Preference maxMagnitude = findPreference(getString(R.string.settings_max_magnitude_key));
+            bindPreferenceSummaryToValue(maxMagnitude);
+
             Preference orderBy = findPreference(getString(R.string.settings_order_by_key));
             bindPreferenceSummaryToValue(orderBy);
+
+            Preference limit = findPreference(getString(R.string.settings_limit_key));
+            bindPreferenceSummaryToValue(limit);
         }
 
         @Override
