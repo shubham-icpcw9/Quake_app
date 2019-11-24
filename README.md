@@ -1,11 +1,17 @@
 Quake Report App
 ===================================
+1. Built an android application that displays a list of recent earthquakes
+in the world.
 
-This Android Application displays a list of recent earthquakes in the world
-from the U.S. Geological Survey (USGS) organization.
+2. Conceptualized and implemented the HTTP networking, JSON parsing
+for retrieving data from USGS earthquake API and also implemented
+multithreading so that networking request should be done on
+background thread so that it not hinder the main thread.
 
-More info on the USGS Earthquake API available at:
-https://earthquake.usgs.gov/fdsnws/event/1/
+3. Implemented OOPs concept with efficient use of List Data Structure
+to store the cities dynamically.
+
+4. Designed high-quality UI using material design system.
 
 Pre-requisites
 --------------
