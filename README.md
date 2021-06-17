@@ -1,17 +1,14 @@
-Quake Report App
+Quake_app
 ===================================
-1. Built an android application that displays a list of recent earthquakes
-in the world.
+• Built an Android app that displays a list of recent earthquakes in the world.
 
-2. Conceptualized and implemented the HTTP networking, JSON parsing
-for retrieving data from USGS earthquake API and also implemented
-multithreading so that networking request should be done on
-background thread so that it not hinder the main thread.
-
-3. Implemented OOPs concept with efficient use of List Data Structure
-to store the cities dynamically.
-
-4. Designed high-quality UI using material design system.
+• Used HttpURLConnection class to make network requests from USGS
+  earthquake API.
+  
+• Implemented OOPs concept with efficient use of List Data Structure to store
+  the cities dynamically.
+  
+• Implemented multi-threading by making network calls off the UI thread.
 
 Pre-requisites
 --------------
