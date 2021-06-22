@@ -1,4 +1,4 @@
-Quake_app
+QuakeApp
 ===================================
 • Built an Android app that displays a list of recent earthquakes in the world.
 
